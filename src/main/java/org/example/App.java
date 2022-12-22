@@ -8,6 +8,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World! from Docker Application" );
+        System.out.println( "Hello World! This application is deployed via Jenkins pipeline to docker hub" );
     }
 }
