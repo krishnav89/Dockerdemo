@@ -1,9 +1,3 @@
-FROM maven:3.5-jdk-8-alpine
-WORKDIR /app
-COPY pom.xml /app/
-COPY Dockerfile /app/
-RUN ["mvn", "package"]
-
 FROM openjdk:8-jre
 ADD target/automation-1.0-SNAPSHOT.jar //
 ENTRYPOINT ["java", "-cp", "/automation-1.0-SNAPSHOT.jar", "org.example.App"]
